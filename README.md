@@ -52,13 +52,14 @@ The pretrained model can be downloaded from [here](https://drive.google.com/file
 
 Validate the model.
 
-The configuration file is in tools/cfgs/voxelrcnn, and the validation scripts is in tools/scripts.
+The configuration file is `pointpillar.yaml` in tools/cfgs/kitti_models, and the validation scripts is in tools/scripts. 
 
 ```
 cd tools
 sh scripts/dist_test.sh ${NUM_GPUS} \
 --cfg_file ${CONFIG_FILE} --batch_size ${BATCH_SIZE} --ckpt ${CKPT}
 ```
+
 
 ### Acknowledge
 
