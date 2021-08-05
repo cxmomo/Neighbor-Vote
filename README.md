@@ -1,8 +1,8 @@
 # Neighbor-Vote
 
-<p align="center"> <img src='docs/nv_arch.jpg' align="center" height="270px"> </p>
+<p align="center"> <img src='docs/nv_arch.jpg' align="center" height="320px"> </p>
 
-This is the official implementation of [**# Neighbor-Vote: Improving Monocular 3D Object Detection through Neighbor Distance Voting**](https://arxiv.org/abs/2107.02493), built on [`OpenPCDet`](https://github.com/open-mmlab/OpenPCDet).
+This is the official implementation of [**Neighbor-Vote: Improving Monocular 3D Object Detection through Neighbor Distance Voting**](https://arxiv.org/abs/2107.02493), built on [`OpenPCDet`](https://github.com/open-mmlab/OpenPCDet).
 
 ```
 @article{chu2021neighbor,
