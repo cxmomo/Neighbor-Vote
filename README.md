@@ -50,9 +50,9 @@ The pretrained model can be downloaded from [here](https://drive.google.com/file
 
 ### Getting Started
 
-Test the model.
+Validate the model.
 
-The configuration file is in tools/cfgs/voxelrcnn, and the training scripts is in tools/scripts.
+The configuration file is in tools/cfgs/voxelrcnn, and the validation scripts is in tools/scripts.
 
 ```
 cd tools
