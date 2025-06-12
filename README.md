@@ -1,19 +1,31 @@
-# Neighbor-Vote
+<div align="center">
+<h1>Neighbor-Vote: Improving Monocular 3D Object Detection through Neighbor Distance Voting (ACM MM 2021)</h1>
 
-<p align="center"> <img src='docs/nv_arch.jpg' align="center" height="320px"> </p>
+Xiaomeng Chu, Jiajun Deng, Yao Li, Zhenxun Yuan, Yanyong Zhang, Jianmin Ji, Yu Zhang
 
-This is the official implementation of [**Neighbor-Vote: Improving Monocular 3D Object Detection through Neighbor Distance Voting**](https://arxiv.org/abs/2107.02493), built on [`OpenPCDet`](https://github.com/open-mmlab/OpenPCDet).
+<a href="https://arxiv.org/abs/2107.02493"><img src="https://img.shields.io/badge/arXiv-2107.02493-b31b1b" alt="arXiv"></a>
+<a href="https://drive.google.com/file/d/1HszwZaMgBiJStEuw0IBUumgcDe4HOzEW/view?usp=sharing" target="_blank"><img src="https://img.shields.io/badge/Checkpoint-Orange" alt="checkpoint"></a>
+</div>
 
-```
-@article{chu2021neighbor,
-title={Neighbor-Vote: Improving Monocular 3D Object Detection through Neighbor Distance Voting},
-author={Chu, Xiaomeng and Deng, Jiajun and Li, Yao and Yuan, Zhenxun and Zhang, Yanyong and Ji, Jianmin and Zhang, Yu},
-journal={arXiv preprint arXiv:2107.02493},
-year={2021}
+```bibtex
+@inproceedings{chu2021neighbor,
+  title={Neighbor-vote: Improving monocular 3d object detection through neighbor distance voting},
+  author={Chu, Xiaomeng and Deng, Jiajun and Li, Yao and Yuan, Zhenxun and Zhang, Yanyong and Ji, Jianmin and Zhang, Yu},
+  booktitle={Proceedings of the 29th ACM International Conference on Multimedia},
+  pages={5239--5247},
+  year={2021}
 }
 ```
 
-### Installation
+## Overview
+
+This repository is an official implementation of [Neighbor-Vote](https://dl.acm.org/doi/abs/10.1145/3474085.3475641),  a novel method that incorporates neighbor predictions to ameliorate object detection from severely deformed pseudo-LiDAR point clouds.
+<div style="text-align: center;">
+    <img src="docs/nv_arch.jpg" alt="Dialogue_Teaser" width=100% >
+</div>
+
+
+## Installation
 
 1. Prepare for the running environment.
    
@@ -44,13 +56,11 @@ year={2021}
    python setup.py develop
    ```
 
-### Pretrained Models
+## Model Weights
 
-The pretrained model can be downloaded from [here](https://drive.google.com/file/d/1HszwZaMgBiJStEuw0IBUumgcDe4HOzEW/view?usp=sharing)
+The model weights can be downloaded from [here](https://drive.google.com/file/d/1HszwZaMgBiJStEuw0IBUumgcDe4HOzEW/view?usp=sharing).
 
-### Getting Started
-
-Validate the model.
+## Evaluation
 
 The configuration file is `pointpillar.yaml` in tools/cfgs/kitti_models, and the validation scripts is in tools/scripts. 
 
@@ -61,10 +71,10 @@ sh scripts/dist_test.sh ${NUM_GPUS} \
 ```
 
 
-### Acknowledge
+## Acknowledge
 
 Thanks to the strong and flexible [`OpenPCDet`](https://github.com/open-mmlab/OpenPCDet) codebase maintained by Shaoshuai Shi ([@sshaoshuai](http://github.com/sshaoshuai)) and Chaoxu Guo ([@Gus-Guo](https://github.com/Gus-Guo)).
 
-### Contact
+## Contact
 
 This repository is implemented by Xiaomeng Chu (cxmeng@mail.ustc.edu.cn).
