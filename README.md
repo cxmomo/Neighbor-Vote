@@ -1,5 +1,5 @@
 <div align="center">
-<h1>Neighbor-Vote: Improving Monocular 3D Object Detection through Neighbor Distance Voting (ACM MM 2021)</h1>
+<h1>Neighbor-Vote: Improving Monocular 3D Object Detection through Neighbor Distance Voting <br> (ACM MM 2021)</h1>
 
 Xiaomeng Chu, Jiajun Deng, Yao Li, Zhenxun Yuan, Yanyong Zhang, Jianmin Ji, Yu Zhang
 
